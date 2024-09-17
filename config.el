@@ -108,9 +108,7 @@
 (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
 (setq plantuml-default-exec-mode 'jar)
 
-;; STS
-(require 'lsp-java-boot)
-
-;; to enable the lenses
-(add-hook 'lsp-mode-hook #'lsp-lens-mode)
-(add-hook 'java-mode-hook #'lsp-java-boot-lens-mode)
+;; Java
+;; (require 'lsp-java-boot)
+;; (add-hook 'lsp-mode-hook #'lsp-lens-mode)
+;; (add-hook 'java-mode-hook #'lsp-java-boot-lens-mode)
