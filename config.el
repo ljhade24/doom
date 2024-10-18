@@ -104,11 +104,27 @@
        (setq mac-right-option-modifier 'left)
        ))
 
+;; General
+(setq confirm-kill-emacs nil)
+;;(add-hook 'emacs-startup-hook 'toggle-frame-maximized)
+;; Set transparency
+;;(set-frame-parameter (selected-frame) 'alpha '(85 85))
+;;(add-to-list 'default-frame-alist '(alpha 85 85))
+
+;; Editor
+(global-subword-mode t)
+(setq display-line-numbers-type 'relative)
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 2)
+
+;; deft
+(setq deft-directory "~/Documents/org/")
+
 ;; PlantUML configuration
 (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
 (setq plantuml-default-exec-mode 'jar)
 
 ;; Java
-;; (require 'lsp-java-boot)
-;; (add-hook 'lsp-mode-hook #'lsp-lens-mode)
-;; (add-hook 'java-mode-hook #'lsp-java-boot-lens-mode)
+(require 'lsp-java-boot)
+(add-hook 'lsp-mode-hook #'lsp-lens-mode)
+(add-hook 'java-mode-hook #'lsp-java-boot-lens-mode)
