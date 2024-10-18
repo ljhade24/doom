@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-dracula)
+(setq doom-theme 'doom-one)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -74,20 +74,6 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-
-;; etc
-(setq display-line-numbers-type 'relative)
-(global-subword-mode t)
-(setq confirm-kill-emacs nil)
-;;(add-hook 'emacs-startup-hook 'toggle-frame-maximized)
-
-;; Indent
-(setq-default indent-tabs-mode t)
-(setq-default tab-width 2)
-
-;; Set transparency
-;;(set-frame-parameter (selected-frame) 'alpha '(85 85))
-;;(add-to-list 'default-frame-alist '(alpha 85 85))
 
 ;; OS
 (cond ((eq system-type 'windows-nt)
