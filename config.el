@@ -88,6 +88,10 @@
        (setq mac-option-modifier 'meta)
        (setq mac-right-command-modifier 'left)
        (setq mac-right-option-modifier 'left)
+       )
+      ((eq system-type 'gnu/linux)
+       (setq default-input-method "korean-hangul")
+       (global-set-key (kbd "<Hangul>") 'toggle-input-method)
        ))
 
 ;; General
