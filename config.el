@@ -84,18 +84,18 @@
        (pixel-scroll-precision-mode)
        )
       ((eq system-type 'darwin)
-       (setq mac-command-modifier 'super)
-       (setq mac-option-modifier 'meta)
+       (setq mac-command-modifier 'meta)
+       (setq mac-option-modifier 'super)
        (setq mac-right-command-modifier 'left)
        (setq mac-right-option-modifier 'left)
        )
       ((eq system-type 'gnu/linux)
-       (setq default-input-method "korean-hangul")
        (global-set-key (kbd "<Hangul>") 'toggle-input-method)
        ))
 
 ;; General
 (setq confirm-kill-emacs nil)
+(setq default-input-method "korean-hangul")
 ;;(add-hook 'emacs-startup-hook 'toggle-frame-maximized)
 ;; Set transparency
 ;;(set-frame-parameter (selected-frame) 'alpha '(85 85))
