@@ -108,6 +108,8 @@
 
 ;; deft
 (setq deft-directory "~/Documents/org/")
+;;(with-eval-after-load 'deft
+;;  (setq deft-default-extension "md"))
 
 ;; PlantUML configuration
 (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
