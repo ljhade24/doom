@@ -80,6 +80,7 @@
        (prefer-coding-system 'utf-8-unix)
        (set-default-coding-systems 'utf-8)
        (set-selection-coding-system 'utf-16-le)
+       (setq ghostel-shell "pwsh")
        )
       ((eq system-type 'darwin)
        (setq mac-command-modifier 'super)
