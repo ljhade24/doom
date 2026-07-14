@@ -80,7 +80,6 @@
        (prefer-coding-system 'utf-8-unix)
        (set-default-coding-systems 'utf-8)
        (set-selection-coding-system 'utf-16-le)
-       (pixel-scroll-precision-mode)
        )
       ((eq system-type 'darwin)
        (setq mac-command-modifier 'super)
@@ -93,6 +92,7 @@
        ))
 
 ;; General
+(pixel-scroll-precision-mode)
 (setq confirm-kill-emacs nil)
 (setq default-input-method "korean-hangul")
 ;;(add-hook 'emacs-startup-hook 'toggle-frame-maximized)
